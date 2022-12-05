@@ -57,11 +57,35 @@ namespace Exercise_4
                 }
             }
         }
-    }
-    internal class Program
-    {
-        static void Main(string[] args)
+        internal class Program
         {
+            static void Main(string[] args)
+            {
+                Stack s = new Stack();
+                while (true)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("\n***Stack Menu***\n");
+                    Console.WriteLine("1. POP");
+                    Console.WriteLine("2. PUSH");
+                    Console.WriteLine("3. DISPLAY");
+                    Console.Write("4. Exit");
+                    Console.Write("\nEnter your choice: ");
+                    string Input = Console.ReadLine();
+                    char ch = Convert.ToChar(Input == "" ? "o" : Input);
+                    switch (ch)
+                    {
+                        case '1':
+                            if (s.empty())
+                            {
+                                Console.WriteLine("\nStack Empty");
+                                break;
+                            }
+                            s.pop();
+                            break;
+                    }
+                }
+            }
         }
-    }
+    }   
 }
