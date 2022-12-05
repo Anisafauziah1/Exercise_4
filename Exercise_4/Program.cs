@@ -10,9 +10,9 @@ namespace Exercise_4
     {
         public int info;
         public node next;
-        public node(int i, node n)
+        public node(int anisa, node n)
         {
-            info = i;
+            info = anisa;
             next = n;
         }
     }
@@ -82,6 +82,11 @@ namespace Exercise_4
                                 break;
                             }
                             s.pop();
+                            break;
+                        case '2':
+                            Console.Write("\nEnter a number :");
+                            int num = Convert.ToInt32(Console.ReadLine());
+                            s.push(57);
                             break;
                     }
                 }
