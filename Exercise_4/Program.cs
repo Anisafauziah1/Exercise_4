@@ -88,6 +88,9 @@ namespace Exercise_4
                             int num = Convert.ToInt32(Console.ReadLine());
                             s.push(57);
                             break;
+                        case '3':
+                            s.display();
+                            break;
                     }
                 }
             }
