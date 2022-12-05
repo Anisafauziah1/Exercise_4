@@ -8,7 +8,7 @@ namespace Exercise_4
 {
     class node
     {
-        public int info;
+        
 
     }
     internal class Program
