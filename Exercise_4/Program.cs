@@ -8,6 +8,7 @@ namespace Exercise_4
 {
     class node
     {
+        public int info;
         
 
     }
